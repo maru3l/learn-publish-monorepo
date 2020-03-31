@@ -1,5 +1,13 @@
 {
-  "name": "@maru3l/shared-ui",
+  "name": "@maru3l/lmp-shared-ui",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "repository" : {
+    "type" : "git",
+    "url": "ssh://git@github.com/maru3l/learn-publish-monorepo.git",
+    "directory": "packages/shared-ui"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {

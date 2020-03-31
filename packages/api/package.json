@@ -1,5 +1,13 @@
 {
-  "name": "api",
+  "name": "@maru3l/lpm-api",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "repository" : {
+    "type" : "git",
+    "url": "ssh://git@github.com/maru3l/learn-publish-monorepo.git",
+    "directory": "packages/api"
+  },
   "version": "0.0.0",
   "private": true,
   "scripts": {
