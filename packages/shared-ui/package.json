@@ -8,6 +8,7 @@
     "url": "ssh://git@github.com/maru3l/learn-publish-monorepo.git",
     "directory": "packages/shared-ui"
   },
+  "main" : "dist/index.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
