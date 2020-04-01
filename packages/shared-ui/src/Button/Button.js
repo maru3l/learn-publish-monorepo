@@ -10,6 +10,7 @@ const StyledButton = styled.button`
   margin: 0;
   padding: 0;
   background-color: tomato;
+  color: white;
 `;
 
 
