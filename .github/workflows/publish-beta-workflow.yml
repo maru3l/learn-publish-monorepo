@@ -1,6 +1,9 @@
 name: Publish-Beta-Workflow
 
-on: [pull_request]
+on:
+  pull_request:
+    branches:
+      - master
 
 jobs:
   publish:
@@ -8,10 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: restore lerna
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+              */*/node_modules
+     key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
       - uses: actions/setup-node@v1
         with:
           registry-url: 'https://npm.pkg.github.com'
-      - run: yarn install
-      - run: yarn release --yes --conventional-commits --canary --preid beta
+      - name: Install dependencies
+        run: yarn install
+      - name: Publish packages
+        run: yarn release --yes --conventional-commits --canary --preid beta
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
