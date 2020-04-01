@@ -1,8 +1,6 @@
-name: Publish Beta Workflow
-# This workflow is triggered on pushes to the repository.
-on:
-  pull_request:
-    - master
+name: Publish-Beta-Workflow
+
+on: [pull_request]
 
 jobs:
   publish:
