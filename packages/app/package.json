@@ -25,6 +25,7 @@
     "develop": "npm run start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "prepare": "yarn build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
