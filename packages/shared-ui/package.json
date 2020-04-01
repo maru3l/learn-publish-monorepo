@@ -1,17 +1,17 @@
 {
   "name": "@maru3l/lmp-shared-ui",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/",
+    "registry": "https://npm.pkg.github.com/",
     "access": "public",
     "directory": "dist"
   },
-  "repository" : {
-    "type" : "git",
+  "repository": {
+    "type": "git",
     "url": "ssh://git@github.com/maru3l/learn-publish-monorepo.git",
     "directory": "packages/shared-ui"
   },
-  "main" : "dist/index.js",
-  "version": "0.0.0",
+  "main": "dist/index.js",
+  "version": "1.0.0",
   "dependencies": {
     "@babel/cli": "^7.8.4",
     "@testing-library/jest-dom": "^4.2.4",

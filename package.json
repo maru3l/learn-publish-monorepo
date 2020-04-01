@@ -16,7 +16,7 @@
     "bootstrap": "lerna bootstrap",
     "postinstall": "yarn bootstrap",
     "develop": "lerna run develop --parallel",
-    "release": "lerna publish --conventional-commits"
+    "release": "cross-env HUSKY_BYPASS=true lerna publish"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -41,7 +41,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
