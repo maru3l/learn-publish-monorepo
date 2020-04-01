@@ -16,7 +16,7 @@ jobs:
         with:
           path: |
             node_modules
-              */*/node_modules
+            */*/node_modules
      key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
       - uses: actions/setup-node@v1
         with:
