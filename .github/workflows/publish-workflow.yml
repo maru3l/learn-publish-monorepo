@@ -18,6 +18,10 @@ jobs:
             node_modules
             */*/node_modules
           key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+      - name: Configure CI Git User
+        run: |
+          git config --global user.email octobot@github.com
+          git config --global user.name GitHub Actions
       - uses: actions/setup-node@v1
         with:
           registry-url: 'https://npm.pkg.github.com'
