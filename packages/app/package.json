@@ -1,18 +1,16 @@
 {
   "name": "@maru3l/lpm-app",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public",
-    "directory": "build"
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com/maru3l/learn-publish-monorepo.git",
     "directory": "packages/app"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
-    "@maru3l/lmp-shared-ui": "^0.1.0",
+    "@maru3l/lmp-shared-ui": "^1.0.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -25,6 +23,7 @@
     "develop": "npm run start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "prepare": "yarn build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -1,7 +1,7 @@
-name: Publish-Beta-Workflow
+name: Publish-Workflow
 
 on:
-  pull_request:
+  push:
     branches:
       - master
 
@@ -24,6 +24,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Publish packages
-        run: yarn release --yes --conventional-commits --canary --preid beta
+        run: yarn release --yes --conventional-commits
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
