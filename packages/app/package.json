@@ -1,9 +1,7 @@
 {
   "name": "@maru3l/lpm-app",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public",
-    "directory": "build"
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",

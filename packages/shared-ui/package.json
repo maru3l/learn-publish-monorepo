@@ -1,9 +1,7 @@
 {
   "name": "@maru3l/lmp-shared-ui",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public",
-    "directory": "dist"
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
