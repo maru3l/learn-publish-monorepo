@@ -16,7 +16,7 @@
     "bootstrap": "lerna bootstrap",
     "postinstall": "yarn bootstrap",
     "develop": "lerna run develop --parallel",
-    "release": "cross-env HUSKY_BYPASS=true lerna publish"
+    "release": "cross-env HUSKY_BYPASS=true lerna publish --registry=https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
