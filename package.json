@@ -15,7 +15,8 @@
     "clean": "lerna clean",
     "bootstrap": "lerna bootstrap",
     "postinstall": "yarn bootstrap",
-    "develop": "lerna run develop --parallel"
+    "develop": "lerna run develop --parallel",
+    "release": "lerna publish --conventional-commits"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
