@@ -27,6 +27,7 @@
     "build": "BABEL_ENV=production babel src -d dist",
     "prepare": "yarn build",
     "test": "react-scripts test",
+    "develop": "npm run storybook",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs"

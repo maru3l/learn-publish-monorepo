@@ -1,16 +1,26 @@
 {
   "name": "root",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "www"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "www"
+    ],
+    "nohoist": [
+      "**"
+    ]
+  },
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "clean": "lerna clean",
+    "bootstrap": "lerna bootstrap",
+    "postinstall": "yarn bootstrap",
+    "develop": "lerna run develop --parallel"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "commitizen": "^4.0.3",
     "cross-env": "^7.0.2",
     "cz-conventional-changelog": "3.1.0",
     "eslint": "^6.8.0",
