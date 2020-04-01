@@ -1,0 +1,19 @@
+name: Publish Beta Workflow
+# This workflow is triggered on pushes to the repository.
+on:
+  pull_request:
+    - master
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+      - run: yarn install
+      - run: yarn release --yes --conventional-commits --canary --preid beta
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
