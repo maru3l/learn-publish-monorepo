@@ -1,15 +1,16 @@
 {
   "name": "@maru3l/lpm-app",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public",
+    "directory": "build"
   },
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com/maru3l/learn-publish-monorepo.git",
     "directory": "packages/app"
   },
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.0",
   "dependencies": {
     "@maru3l/lmp-shared-ui": "^0.1.0",
     "@testing-library/jest-dom": "^4.2.4",
