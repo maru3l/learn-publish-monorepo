@@ -5,3 +5,4 @@ export { styles, global };
 
 export * from './Button'
 export * from './Input'
+export * from './Link'

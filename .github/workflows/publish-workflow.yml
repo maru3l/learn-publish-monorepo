@@ -28,6 +28,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Publish packages
-        run: yarn release --yes --conventional-commits
+        run: yarn release --yes --conventional-commits --sign-git-commit --sign-git-tag
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
