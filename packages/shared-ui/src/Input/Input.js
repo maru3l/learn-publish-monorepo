@@ -8,6 +8,9 @@ const StyledInput = styled.input`
   border-radius: 0;
   background: inherit;
   color: tomato;
+  :focus {
+    outline: blue;
+  }
 `;
 
 export default props => (<StyledInput {...props}/>)
