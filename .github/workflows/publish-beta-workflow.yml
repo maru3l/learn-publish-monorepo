@@ -24,6 +24,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Publish packages
-        run: yarn release --yes --conventional-commits --canary --preid beta
+        run: yarn release --yes --conventional-commits --conventional-graduate --canary --preid beta
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
