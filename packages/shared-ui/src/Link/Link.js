@@ -1,4 +1,7 @@
 // vendors
 import React from 'react'
+import styled from 'styled-components'
 
-export default ({children, ...rest}) => (<a {...rest}>{children}</a>);
+const StyledA = styled.a``;
+
+export default ({children, ...rest}) => (<StyledA {...rest}>{children}</StyledA>);
