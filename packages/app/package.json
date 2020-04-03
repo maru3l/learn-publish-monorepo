@@ -8,9 +8,9 @@
     "url": "ssh://git@github.com/maru3l/learn-publish-monorepo.git",
     "directory": "packages/app"
   },
-  "version": "1.0.4",
+  "version": "1.0.5",
   "dependencies": {
-    "@maru3l/lmp-shared-ui": "^1.0.4",
+    "@maru3l/lmp-shared-ui": "^1.0.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
