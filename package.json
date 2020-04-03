@@ -6,13 +6,11 @@
       "packages/*",
       "www"
     ],
-    "nohoist": [
-      "**"
-    ]
+    "nohoist": ["**/webpack"]
   },
   "scripts": {
     "commit": "git-cz",
-    "clean": "lerna clean",
+    "clean": "lerna clean --yes",
     "bootstrap": "lerna bootstrap",
     "postinstall": "yarn bootstrap",
     "develop": "lerna run develop --parallel",
